@@ -1,0 +1,189 @@
+body {
+	font-family: "Dancing Script";
+	background-color: #050707;
+	font-size: 16pt;
+	margin-bottom: 0px;
+}
+
+header {
+	text-align: left;
+	background-color: #5b7989;
+	color: white;
+	padding: 20px;
+	border-radius: 10px 10px 0px 0px;
+	animation-duration: 1s;
+	animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-top: 150%;
+    width: 0%
+  }
+
+  to {
+    margin-top: -5%;
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-top: 150%;
+    width: 60%
+  }
+
+  to {
+    margin-top: 0%;
+    width: 100%;
+  }
+}
+
+h1, .horizontal {
+	display: inline;
+}
+
+.horizontal {
+	float: right;
+}
+
+header h1 {
+	text-shadow: -2px 0px 0px #02010A;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline;
+	justify-content: center;
+}
+
+nav ul li:hover{
+	background-color: #A7A8A8;
+}
+
+ul.horizontal li{
+	padding: 0 20px;
+}
+
+nav ul li a{
+	text-decoration:none;
+	color: white;
+}
+
+ul.horizontal {
+	margin:0;
+	padding:0;
+	
+}
+
+.imagen-central{
+	text-align: center;
+	background-color: #82c3a6;
+}
+
+.imagen-central img {
+	width: 80%;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	box-shadow: 2px 2px 0px #02010A;
+}
+
+.imagen-secundaria  {
+	display: flex;
+    flex-direction: rown;
+	background-color: #d5c75f;
+}
+
+.imagen-secundaria img {
+	border: 1px solid black;
+	width: 100%;
+}
+
+.imagen-secundaria > figure{
+	text-align: center;
+	margin: 17px;
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 22px;
+}
+
+#paisajes img:hover{
+	transform: rotate(10deg);
+	box-shadow: #82c3a6;
+	border: 2px solid black;
+}
+
+#retratos img:hover {
+	transform: translate(20px,-5px);
+	border: 2px solid black;
+	box-shadow: #82c3a6;
+}
+
+.imagen-central img, .imagen-secundaria img{
+	box-shadow: 2px 2px 2px #02010A;
+}
+
+footer{
+	border-radius: 0px 0px 10px 10px;
+	background-color: #C6d5c5;
+	margin-top:-10px;
+}
+
+.contenido-pie-pagina {
+	display: flex;
+	flex-direction: rown;
+}
+
+.contenido-pie-pagina > div {
+	padding: 40px;
+	padding-left:30px;
+	padding-top: 0px;
+	padding-bottom:10px;
+}
+
+
+@media (min-width:300px) and (max-width:768px){
+	header {
+		padding: 45px;
+	}
+	
+	.menu h1{
+		text-align: center;
+	}
+	
+	h1, .horizontal {
+	display: block;
+	margin:15px;
+	margin-top:-20px;
+	}
+
+	.horizontal {
+	float: center;
+	}
+	
+	ul.horizontal li{
+	padding: 0 7px;
+	}
+	
+	.imagen-secundaria  {
+	display: flex;
+    flex-direction: column;
+	}
+	
+	.imagen-secundaria > figure{
+		display:block;
+		width: 82%;
+	}
+	
+	.contenido-pie-pagina {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media (max-width:810px){
+		.contenido-pie-pagina {
+		display: flex;
+		flex-direction: column;
+		}
+}
